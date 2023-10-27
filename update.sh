@@ -30,7 +30,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/Anggajrxxx/vip/main/menu/menu.zip
+    wget https://raw.githubusercontent.com/figogove/vip/main/menu/menu.zip
     unzip menu.zip
     chmod +x *
     mv menu/* /usr/local/sbin
