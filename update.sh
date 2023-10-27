@@ -30,12 +30,11 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/figogove/vip/main/menu/menu.zip
-    unzip menu.zip
-    chmod +x *
-    mv menu/* /usr/local/sbin
-    rm -rf menu.zip
-    rm -rf update.sh
+    wget -O /tmp/menu/menu-master.zip "https://raw.githubusercontent.com/figogove/vip/main/menu/menu.zip"
+    mkdir /tmp/menu
+    7z e  /tmp/menu-master.zip -o/tmp/menu/
+    chmod +x /tmp/menu/*
+    mv /tmp/menu/* /usr/sbin/
 }
 netfilter-persistent
 clear
