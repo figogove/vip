@@ -30,7 +30,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget -O /tmp/menu/menu-master.zip "https://raw.githubusercontent.com/figogove/vip/main/menu/menu.zip"
+    wget -O /tmp/menu/menu-master.zip "https://raw.githubusercontent.com/figogove/vip/main/ws/menu.zip"
     mkdir /tmp/menu
     7z e  /tmp/menu-master.zip -o/tmp/menu/
     chmod +x /tmp/menu/*
